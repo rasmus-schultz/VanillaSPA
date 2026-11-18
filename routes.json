@@ -1,0 +1,9 @@
+{
+  "pagesPath": "elmts/pages",
+
+  "routes": [
+    ["404", "NotFound"],
+    ["/", "Home"],
+    ["/test", "Test"]
+  ]
+}

@@ -1,0 +1,5 @@
+<script>
+  const path = window.location.pathname;
+  const base = path.substring(0, path.lastIndexOf("/") + 1);
+  window.location.replace(`${base}#/`);
+</script>
