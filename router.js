@@ -5,6 +5,9 @@ const routesContent = await routesFile.json();
 const routes = routesContent.routes;
 const pagesPath = routesContent.pagesPath;
 
+console.log("pathname:", window.location.pathname);
+console.log("hash:", window.location.hash);
+
 async function loadPage(pageName) {
   const path = `${pagesPath}/${pageName}/${pageName}`;
   const html = await fetch(`${path}.html`);
