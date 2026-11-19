@@ -1,12 +1,12 @@
 // router.js
 
+console.log("pathname:", window.location.pathname);
+console.log("hash:", window.location.hash);
+
 const routesFile = await fetch("routes.json");
 const routesContent = await routesFile.json();
 const routes = routesContent.routes;
 const pagesPath = routesContent.pagesPath;
-
-console.log("pathname:", window.location.pathname);
-console.log("hash:", window.location.hash);
 
 async function loadPage(pageName) {
   const path = `${pagesPath}/${pageName}/${pageName}`;
