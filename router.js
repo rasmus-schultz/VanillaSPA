@@ -75,6 +75,7 @@ async function loadPage() {
   }
   const pageContent = await html.text();
   document.body.innerHTML = pageContent;
+  document.body.dataset.elmt = folderPath;
 
   loadCss(folderPath);
 }
